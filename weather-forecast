@@ -1,0 +1,91 @@
+<1 DOCTYPEhtml>
+ <html lang ="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewpoint" content="width=device-width,
+        initial-scale=1.0 " />
+        meta http-equiv="X-UA-compatible" content="ie=edge" />
+        <link
+        rel="style-sheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/
+        css/bootsrap.min.css"
+        integrity="sha384-ggOyR0ixcbMQv3xipma34MD+dH/1fQ784/j6cY/i
+        JTQUOhcNr7x9JvoRxT2NZw1T"
+        crossorigin="anonymous" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <link rel="style-sheet" href="src/style.css"/>
+<tittle>weather app</tittle> 
+    </head>
+    <body>
+<div class="container">
+    <div class="weather-app-wrapper">
+        <div class="weather-app">
+ type ="search"
+ placeholder ="type a city.." 
+ class ="form-control"  
+ id ="city-input"
+ autocomplete ="off" />
+</div>
+<div class="col-3">
+    <input type="submit" value="search" class="btn btn-primary w-100" />
+</div>
+</div>
+</form>
+<div class="overview">
+
+    <h1 id = "city"></h1>
+    <ul>
+        <li> last updated: <span id ="date"></span></li>
+        <li id ="description"></li>
+    </ul>
+</div>
+<div class ="row"></div>
+<div class ="col-6"></div>
+<div class ="clearfix weather-temperature"></div>
+<img <src="" alt="clear" id ="icon"
+  class="float-left" />
+  <div class ="float-left">
+    <strong id="temperature"></strong
+        ><span class ="units"
+        ><a href="#" id="celsius-link"
+        class="active">℃</a>
+        <a href="#" id="fahrenheit-link">°F</a></span>
+        <div class="col-6">
+            <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+            </ul>
+        </div>
+  </div>
+  <div class="weather-forecast">
+    <div class="row">
+        <div class="col-2">
+            <div class="weather-forecast-date">
+            Thu
+            </div>
+            <img src="https://openweathermap.org/img/wn/50d@2x.png" alt="" 
+            width="42" />
+            <div class="weather-forecast-temperatures"></div>
+           >
+            18⁰
+         </span>
+          <span class="weather-forecast-temperature-min">
+            12⁰
+            </span>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<small>
+    <a href="https://github.com/wecodeschool/vanilla-weathwer-app" target="_blank
+    >Open-source code /a>
+    by Stella Modise
+ </small>
+</div>
+</div>
+<script src="src/app.js"><script>
+    </body>
+    </html>
+
