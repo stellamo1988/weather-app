@@ -48,7 +48,7 @@
   <div class ="float-left">
     <strong id="temperature"></strong
         ><span class ="units"
-        ><a href="#" id="celsius-link"
+<a href="#" id="celsius-link"
         class="active">℃</a>
         <a href="#" id="fahrenheit-link">°F</a></span>
         <div class="col-6">
@@ -74,18 +74,71 @@
             12⁰
             </span>
         </div>
+        </head>
+        <body>
+        <div class="weather-app">
+        <header>
+        <form class="search-form" id="search-form">
+        <input
+        type="search"
+        placeholder="Enter a city.."
+        required
+        id="search-form-input"
+        class="search-form-input"
+        />
+        <input type="submit" value="search" class="search-form-button" />
+        </form>
+        </header>
+        <main>
+        <div class="weather-app-data">
         </div>
+        <h1 class="weather-app-city" id="city"></h1>
+        <p class="weather-app-details">
+        <span id="time"></span>
+        <span id="description"></span>
+        <br />
+        Humidity:<strong id="humidity"></strong>,
+        Wind:<strong id="wind-speed"></strong>
+        </p>
     </div>
+    <div class="weather-app-temperature-container">
+    <div id="icon"></div>
+    <div class="weather-app-temperature" id="temperature"></div>
+    <div class="weather-app-unit">℃</div>
   </div>
 </div>
-<small>
+    <div class="weather-forecast">
+     <div class="weather-forecast-day">
+        <div class ="weather-forecast-date">${day}</div>
+        <fiv class ="weather-forecast-icon">⛅</div>
+        <div class ="weather-forecast-temperatures">
+            <div claass ="weather-forecast-temperature">
+                <strong>15°</strong>
+            </div>
+            <div class ="weather-forecast-temperature">9°</div>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="weather-forecast" id="forecast"></div>
+    </main>
+ <footer>   
+This project was coded by 
     <a href="https://github.com/wecodeschool/vanilla-weathwer-app" target="_blank
-    >Open-source code /a>
-    by Stella Modise
+    >/a> Stella Modise
+    is
+    <a href="https://github.com/stellamo1988"target="_blank"
+    open-source code on GitHub>
+
+    </a>
+    
+     
+ 
  </small>
 </div>
 </div>
 <script src="src/app.js"><script>
     </body>
+    </footer>
     </html>
 
